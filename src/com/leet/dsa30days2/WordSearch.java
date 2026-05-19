@@ -1,5 +1,24 @@
 package com.leet.dsa30days2;
 
+// 79. Word Search
+// Given an m x n grid of characters board and a string word, return true if word exists in 
+// the grid.
+// The word can be constructed from letters of sequentially adjacent cells, where adjacent 
+// cells are horizontally or vertically neighboring. The same letter cell may not be used 
+// more than once.
+// Explanation: We can use Depth-First Search (DFS) to explore the grid. We start from each 
+// cell and check if it matches the first character of the word. If it does, we recursively 
+// check its neighbors for the next character in the word. We mark cells as visited to avoid 
+// using the same cell more than once. If we find all characters of the word, we return true. 
+// If we exhaust all possibilities without finding the word, we return false.
+// Example 1:
+// Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+// Output: true
+// Example 2:
+// Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"
+// Output: true
+
+
 public class WordSearch {
 
 	public static boolean exist(char[][] board, String word) {
