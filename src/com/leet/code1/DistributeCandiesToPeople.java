@@ -2,9 +2,12 @@ package com.leet.code1;
 
 /*
  * We distribute some number of candies, to a row of n = num_people people in the following way:
- * We then give 1 candy to the first person, 2 candies to the second person, and so on until we give n candies to the last person.
- * Then, we go back to the start of the row, giving n + 1 candies to the first person, n + 2 candies to the second person, and so on until we give 2 * n candies to the last person.
- * This process repeats (with us giving one more candy each time, and moving to the start of the row after we reach the end) until we run out of candies.
+ * We then give 1 candy to the first person, 2 candies to the second person, and so on until we give n 
+ * candies to the last person.
+ * Then, we go back to the start of the row, giving n + 1 candies to the first person, n + 2 candies to the 
+ * second person, and so on until we give 2 * n candies to the last person.
+ * This process repeats (with us giving one more candy each time, and moving to the start of the row after 
+ * we reach the end) until we run out of candies.
  * The last person will receive all of our remaining candies (not necessarily one more than the previous gift).
  * 
  * Return an array (of length num_people and sum candies) that represents the final distribution of candies.
@@ -33,8 +36,10 @@ package com.leet.code1;
  * 
  * Explanation Video: https://www.youtube.com/watch?v=3j0sJ3w4t9A
  * 
- * Time Complexity: O(n) where n is the number of people. We are iterating through the array of people and distributing candies until we run out of candies.
- * Space Complexity: O(n) where n is the number of people. We are using an array of size num_people to store the final distribution of candies.
+ * Time Complexity: O(n) where n is the number of people. We are iterating through the array of people and 
+ * distributing candies until we run out of candies.
+ * Space Complexity: O(n) where n is the number of people. We are using an array of size num_people to store 
+ * the final distribution of candies.
  * 
  * Data Structures used: Array
  * Algorithm used: Simulation
